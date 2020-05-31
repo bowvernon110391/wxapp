@@ -4,14 +4,14 @@
 		{
 			"type": "shell",
 			"label": "shell: g++.exe build active file",
-			"command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+			"command": "g++.exe",
 			"args": [
 				"-g",
-				"${fileDirname}\\*.cpp",
-				"%WX-CONFIG%",
-				"%WX-CONFIG-LIBS%",
+				"*.cpp",
+				"$WX_CONFIG",
+				"$WX_CONFIG_LIBS",
 				"-o",
-				"${fileDirname}\\app.exe"
+				"app.exe"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
